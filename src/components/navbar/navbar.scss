@@ -55,14 +55,14 @@ nav{
         justify-content: flex-end; 
         background-color: #fcf5f3;
         height: "100%";
-
+        
         @include md{
             background-color: transparent;
         }
 
         a{
-            padding: 12px 24px;
-            margin: 20px;
+            padding: 6px 12px;
+            margin: 4px;
         }
         .register{
             background-color: #fece51;
