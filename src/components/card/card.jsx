@@ -16,10 +16,10 @@ function Card({item}){
 
                 <p className='address'>
                     <img src='/pin.png' alt=''/>
-                    <span>$ {item.address}</span>
+                    <span>{item.address}</span>
                 </p>
 
-                <p className='price'>{item.price}</p>
+                <p className='price'>$ {item.price}</p>
 
                 <div className="bottom">
 

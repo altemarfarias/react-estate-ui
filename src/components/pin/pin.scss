@@ -1,0 +1,26 @@
+.popupContainer{
+    display: flex;
+    gap: 20px;
+  
+    img{
+      width: 64px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  
+    .textContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .img{
+        width: 14px;
+        height: 14px;
+        gap: 5px;
+        align-items: center;        
+        margin-right: 5px;
+        justify-content: center;
+      }
+    }
+  } 
