@@ -1,24 +1,41 @@
+@import "../../responsive.scss";
+
 .singlePage{
     display: flex;
     height: 100%;
 
+    @include md{
+        flex-direction: column;
+        overflow: scroll;
+    }
+
     .details{
         flex: 3;
+        height: 100%;
+        
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+        }
+
 
         .wrapper{
-            padding-right: 50px;
+            padding-right: 40px;
 
             .info{
-                margin-top: 50px; 
+                margin-top: 40px; 
+              
                 .top{
                     display: flex;
                     justify-content: space-between;
                     .post{
                         display: flex;
                         flex-direction: column;
-                        gap: 20px;
+                        gap: 14px;
                         h1{
-                            font-style: 400; 
+                            font-size: 24px;
+
 
                         }
                         .address{
@@ -76,9 +93,128 @@
     .features{
         flex: 2;
         background-color: #fcf5f3;
+        height: 100%;
+        overflow-y: scroll;
+
+        @include md{
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+            }
 
         .wrapper{
             padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+
+            .title{
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 5px;                
+            }
+
+            .feature{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    background-color: rgba(254,205, 81, 0.209);
+                }
+            }
+
+            .featureText{
+                span{
+                    font-weight: bold;                    
+                }
+                
+                p{
+                    font-size: 12px;
+                }
+            }
+
+            .listVertical{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                padding: 14px 10px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .listHorizontal{
+                display: flex;
+                justify-content: space-between;
+                padding: 14px 10px;
+                background-color: white;
+                border-radius: 10px;
+
+                .feature{
+                    padding: 10px;
+                }
+            }
+
+            .sizes{
+                display: flex;
+                justify-content: space-between;
+                
+                @include lg{
+                    font-style: 12px;
+                }
+
+                @include md{
+                    font-size: 10px;
+                }
+
+                .size{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: white;
+                    border-radius: 5px;
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .mapContainer{
+                width: 100%;
+                height: 200PX;
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+
+                button{
+                    padding: 12px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: white;
+                    border: 1px solid #fece51;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 

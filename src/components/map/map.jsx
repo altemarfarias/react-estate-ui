@@ -1,9 +1,8 @@
 import { MapContainer, TileLayer } from 'react-leaflet';
 import './map.scss';
 import "leaflet/dist/leaflet.css";
-import '../pin/Pin'
+import '../pin/Pin';
 import Pin from '../pin/Pin';
-
 
 
 function Map({items}){
@@ -20,5 +19,6 @@ function Map({items}){
         </MapContainer>
     )
 }
+
 
 export default Map;

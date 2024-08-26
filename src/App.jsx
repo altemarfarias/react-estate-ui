@@ -1,13 +1,9 @@
-import Navbar from "./components/navbar/Navbar.jsx";
-//import "./layout.scss";
 import ListPage from "./routes/listPage/listPage";
 import HomePage from "./routes/homePage/homePage";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/SinglePage.jsx";
+import ProfilePage from "./routes/profilePage/profilePage.jsx";
 
 //https://reactrouter.com/en/main/start/overview
 
@@ -28,6 +24,10 @@ function App() {
         {
           path:"/:id",
           element:<SinglePage/>
+        },
+        {
+          path:"/:profile",
+          element:<ProfilePage/>
         }
       ]
     }

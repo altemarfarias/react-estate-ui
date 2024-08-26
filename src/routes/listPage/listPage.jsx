@@ -1,8 +1,10 @@
 import "./listPage.scss";
 import { listData } from '../../lib/dummydata';
 import Filter from "../../components/filter/Filter"
-import Card from "../../components/card/card";
-import Map from "../../components/map/map";
+import Card from "../../components/card/card.jsx";
+import Map from "../../components/map/map.jsx";
+
+
 
 
 function ListPage() {
